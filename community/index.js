@@ -58,9 +58,9 @@ function searchButtonEvent(evt) {
         showAllPosts()
         return;
     }
-    const post = datasets.filter(game => game.title.toLowerCase() === searchInput.value.toLowerCase());
+    const post = datasets.filter(post => post.title.toLowerCase() === searchInput.value.toLowerCase());
     if(!post.length) {
-        errorHandler(`No game name with '${searchInput.value}' were found`);
+        errorHandler(`No posts name with '${searchInput.value}' were found`);
         return;
     }
     addPostToPage(post)
