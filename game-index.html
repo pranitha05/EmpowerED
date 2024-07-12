@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerED Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img height="50px" width="150px" src="./logo/logo.svg" alt="logo" />
+        <div class="nav-container">
+            <ul>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Profile</a></li>
+
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="games-section">
+            <h1>Educational Games</h1>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search">
+                <button type="submit" id="search-button">
+                    <img src="./logo/search-icon.svg" alt="Search">
+                </button>
+            </div>
+        </div>
+        <div class="categories">
+            <button data-category="all">All</button>
+            <button data-category="math">Math</button>
+            <button data-category="science">Science</button>
+            <button data-category="english">English</button>
+            <button data-category="history">History</button>
+            <button data-category="more">More</button>
+        </div>
+        <div class="games-grid" id="games-grid">
+            <div class="game-card" data-category="problem-solving">
+                <img src="./logo/chess-game.png" alt="Chess Game">
+                <div class="game-title">Chess</div>
+                <button class="play-button">Play</button>
+            </div>
+            <div class="game-card" data-category="problem-solving">
+                <img src="./logo/simmon-game.png" alt="Simmon Game">
+                <div class="game-title">Simmon</div>
+                <button class="play-button">Play</button>
+            </div>
+            <div class="game-card" data-category="math">
+                <img src="./logo/speed-math.png" alt="Math Game">
+                <div class="game-title">Speed Math</div>
+                <button class="play-button">Play</button>
+            </div>
+            <div class="game-card" data-category="cs">
+                <img src="./logo/array-game.png" alt="CS Game">
+                <div class="game-title">Array</div>
+                <button class="play-button">Play</button>
+            </div>
+
+            <div class="game-card" data-category="history">
+                <img src="./logo/english-game.PNG" alt="English Game">
+                <div class="game-title">Remember the letters</div>
+                <button class="play-button">Play</button>
+            </div>
+            
+            <!-- Add more game cards as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" height="50px" width="150px" src="./logo/logo.svg" alt="logo" />
+            
+            <div class="social-container">
+                <ul>
+                    <li>
+                        <img src="./logo/twitter.svg" width="25px" height="25px" alt="twitter_logo">
+                    </li>
+                    <li>
+                        <img src="./logo/facebook.svg" width="25px" height="25px" alt="facebook_logo">
+                    </li>
+                    <li>
+                        <img src="./logo/instagram.svg" width="25px" height="25px" alt="instagram_logo">
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
