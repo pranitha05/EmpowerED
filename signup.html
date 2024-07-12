@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-holder">
+        <div class="logo-img-holder">
+            <img src="empower-loho-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div class="form-holder">
+        <p>You are sigining up for empower ed</p>
+        
+        <form class="signup-form" action="blah" method="post">
+            <h1>Yo signup homie</h1>
+            <div class="name">
+                <label for="first_name">first name</label>
+                <input type="text" name="first_name" id="first_name" minlength="3" maxlength="20">
+                <label for="second_name">second name</label>
+                <input type="text" name="second_name" id="second_name" minlength="3" maxlength="20">
+            </div>
+            <div class="contact">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone_no">Phone number</label>
+                <input type="number" name="phone_no" id="phone_no" pattern="[789][0-9]{9}">
+            </div>
+            <div class="password">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm_password">cofirm password</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+            </div>
+            <div class="create-account">
+                <button type="submit">Create Account</button>
+            </div>
+            <div class="log-in-opt">
+                <p>Already have an account? <a href="login.html">login</a></p>
+            </div> 
+        </form>
+    </div>
+
+</body>
+</html>
