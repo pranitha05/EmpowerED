@@ -33,9 +33,11 @@ function addPostToPage(posts) {
         postCardDiv.classList.add("card");
 
         postCardDiv.innerHTML = `
-        <img height="30px" width="30px" src=${post.src} alt=${post.alt}>
-        <h2 class="card-title">${post.title}</h2>
-        <p class="card-desc">${post.desc}</p>
+        <a href="/community/posts/${post.title.toLowerCase()}">
+            <img height="30px" width="30px" src=${post.src} alt=${post.alt}>
+            <h2 class="card-title">${post.title}</h2>
+            <p class="card-desc">${post.desc}</p>
+        </a>
         `
         postContainer.append(postCardDiv)
     }
@@ -74,6 +76,5 @@ function showAllPosts() {
     addPostToPage(datasets)
 }
 
-searchButton.addEventListener("click", searchButtonEvent)
-searchInput.addEventListener("change", searchButtonEvent)
+searchInput.addEventListener("input", searchButtonEvent)
 showAllPosts()
