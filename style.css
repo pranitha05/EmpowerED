@@ -60,7 +60,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 .logo-img-holder{
     background-color: black;
@@ -78,7 +77,7 @@
   float: right;
   width: 60%;
   max-width: 60%;
-    background-color: var(--form-label-color);
+  background-color: var(--form-label-color);
 } 
 .form-holder h1{
     color: var(--secondary-color);
@@ -87,23 +86,27 @@
   width: 40ch;
 }
 .signup-form{
-    background-color: white;
+  width: 60vw;
     display: table;
-    height: 80vh;
-}
-.signup-form div{
-    display: table-row;
-}
-.signup-form form{
-  display: table;
 }
 .signup-form div{
   display: table-row;
 }
-.signup-form input{
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+.password, .contact, .name{
   
+  background-color: white;
+}
+.signup-form input{
+  width: 80%;
 }
 .signup-form label{
+  padding: 2rem;
+    width: 20%;
     text-transform: uppercase;
     color: var(--form-label-color);
 }
@@ -114,7 +117,7 @@
   border-color: var(--invalid-color);
 }
 .signup-form input:focus{
-  border: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
   box-shadow: 2px 2px 2px var(--secondary-color);
 }
 button{
