@@ -10,7 +10,7 @@ A website that offers the following:
 - Offline Access: Users can download learning materials for offline access, ensuring continued learning even in areas with limited internet connectivity.
 
 # Figma Wireframes
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FBPLawX6IIYbcpcCaDp2Fh8%2FEmpowerED%3Fnode-id%3D0-1%26t%3DKpN70zjOWriyf13g-1" allowfullscreen></iframe>
+[Figma URL](https://www.figma.com/design/BPLawX6IIYbcpcCaDp2Fh8/EmpowerED?node-id=0-1&t=KpN70zjOWriyf13g-1)
 
 
 # Authors 
