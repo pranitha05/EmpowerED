@@ -49,38 +49,47 @@
     --invalid-color:red;
     --valid-color:green;
     --primary-color:white;
-    --secondary-color:rgb(95, 143, 227);
-    --form-label-color:lightgrey;
+    --secondary-color:rgb(165, 68, 165);
+    --form-label-color:rgb(162, 158, 158);
 
+}
+.logo-holder,.form-holder{
+  height: 100vh;
+}
+.logo-holder,.logo-img-holder,.form-holder,.form,.signup-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .logo-img-holder{
     background-color: black;
-    opacity: .5;
-    width: clamp(100%,100vh,16rem);
-    align-items: center;
-}
-.logo-holder,.logo-img-holder{
-    display: flex;
-    justify-content: center;
+    opacity: .4;
+    width: 100%;
 }
 .logo-holder{
-    align-items: center;
-    width: clamp(40%,100vh,16rem);
-    height: 100vh;
-    background-image: url("john-rodenn-castillo-eluzJSfkNCk-unsplash.jpg");
+    width: 40%;
+    max-width: 40%;                                     
+    background-image: url("photo.jpg");
     float: left;
 } 
  .form-holder{
-    padding-left: 4rem;
-    height: 100vh;
+  flex-direction: column;
+  float: right;
+  width: 60%;
+  max-width: 60%;
     background-color: var(--form-label-color);
 } 
 .form-holder h1{
-    color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.form-text{
+  width: 40ch;
 }
 .signup-form{
     background-color: white;
     display: table;
+    height: 80vh;
 }
 .signup-form div{
     display: table-row;
@@ -91,15 +100,17 @@
 .signup-form div{
   display: table-row;
 }
+.signup-form input{
+  
+}
 .signup-form label{
-    padding-right: 3rem;
     text-transform: uppercase;
     color: var(--form-label-color);
 }
-.signup-form input:valid{
+.signup-form input::after:valid{
   border-color: var(--valid-color);
 }
-.signup-form input:invalid{
+.signup-form input::after:invalid{
   border-color: var(--invalid-color);
 }
 .signup-form input:focus{
