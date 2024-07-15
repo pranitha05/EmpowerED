@@ -1,3 +1,4 @@
+/* normalize and css reset */
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -53,10 +54,7 @@
     --form-label-color:rgb(162, 158, 158);
 
 }
-.logo-holder,.form-holder{
-  height: 100vh;
-}
-.logo-holder,.logo-img-holder,.form-holder,.form,.signup-form{
+.logo-holder,.logo-img-holder{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,13 +65,62 @@
     width: 100%;
 }
 .logo-holder{
+  height: 100vh;
     width: 40%;
     max-width: 40%;                                     
     background-image: url("photo.jpg");
     float: left;
-} 
- .form-holder{
+}
+.form-holder{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  height: 100vh;
+  width: 60%;
+  max-width: 60%;                     
+  float:right;
+  background-color: var(--form-label-color);
+  
+}
+.input-holder{
+  border: 5px solid pink;
+  background: white;
+  height: 100%;
+  box-shadow: 5px whitesmoke;
+}
+form div{
+  margin-top: 1rem;
+}
+.first-name,.email,.password{
+  border: solid 2px blue;
+  float: left;
+  margin-left: 7rem;
+}
+.last-name,.phone-no,.confirm-password{
+  border: solid 2px green;
+  float: right;
+  margin-right: 7rem;
+}
+label{
+  margin-top: 2rem;
+  display: block;
+}
+input{
+  border-radius: 5px;
+}
+ input:focus{
+  border-bottom: 2px solid var(--secondary-color);
+  box-shadow: 2px 2px 2px var(--secondary-color);
+}
+label{
+  text-transform: uppercase;
+  color: var(--form-label-color);
+}
+button{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+/*  .form-holder{
   float: right;
   width: 60%;
   max-width: 60%;
@@ -86,41 +133,30 @@
   width: 40ch;
 }
 .signup-form{
+  
   width: 60vw;
-    display: table;
 }
 .signup-form div{
-  display: table-row;
+  display: flex;
 }
 label,
 input {
-  display: table-cell;
-  margin-bottom: 10px;
+  display: block;
 }
 .password, .contact, .name{
   
   background-color: white;
 }
 .signup-form input{
-  width: 80%;
+  width: 90%;
 }
-.signup-form label{
-  padding: 2rem;
-    width: 20%;
-    text-transform: uppercase;
-    color: var(--form-label-color);
-}
+
 .signup-form input::after:valid{
   border-color: var(--valid-color);
 }
 .signup-form input::after:invalid{
   border-color: var(--invalid-color);
 }
-.signup-form input:focus{
-  border-bottom: 2px solid var(--secondary-color);
-  box-shadow: 2px 2px 2px var(--secondary-color);
-}
-button{
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
+
+
+ */
