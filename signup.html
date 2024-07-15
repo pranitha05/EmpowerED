@@ -7,12 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- left part of form for website name and picture -->
     <div class="logo-holder">
         <div class="logo-img-holder">
             <img src="logo.png" alt="">
         </div>
     </div>
+   <!--  where the form and heading will be -->
     <div class="form-holder">
+        <h1>Welcome to Empower ED</h1>
+        <form id="signup-form" onsubmit="handlesubmit(event)">
+            <div class="input-holder">
+                <h2>Fill em up</h2>
+                <div class="first-name">
+                    <label for="first_name">first name</label>
+                    <input type="text" name="first_name" id="first_name" minlength="3" maxlength="20">
+                </div>
+                <div class="last-name">
+                    <label for="second_name">second name</label>
+                    <input type="text" name="second_name" id="second_name" minlength="3" maxlength="20">
+                </div>
+                <div class="email">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="phone-no">
+                    <label for="phone_no">Phone number</label>
+                    <input type="number" name="phone_no" id="phone_no" pattern="[789][0-9]{9}">
+                </div>
+                <div class="password">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="confirm-password">
+                    <label for="confirm_password">cofirm password</label>
+                    <input type="password" name="confirm_password" id="confirm_password">
+                </div>
+            </div>
+            <div class="create-account">
+                <button type="submit">Create Account</button>
+            </div>
+            <div class="log-in-opt">
+                <p>Already have an account? <a href="login.html">login</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- <div class="form-holder">
         <div class="form-text">
             <h1>You are sigining up for empower ed</h1>
         </div>
@@ -43,9 +83,8 @@
                     <p>Already have an account? <a href="login.html">login</a></p>
                 </div> 
             </form>
-        </div>
-        
-    </div>
+        </div>   
+    </div> -->
 
 </body>
 </html>
