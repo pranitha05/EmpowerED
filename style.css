@@ -92,14 +92,15 @@ form div{
   margin-top: 1rem;
 }
 .first-name,.email,.password{
-  border: solid 2px blue;
   float: left;
   margin-left: 7rem;
 }
 .last-name,.phone-no,.confirm-password{
-  border: solid 2px green;
   float: right;
   margin-right: 7rem;
+}
+.confirm-password,.password{
+  margin-bottom: 1rem;
 }
 label{
   margin-top: 2rem;
@@ -117,46 +118,10 @@ label{
   color: var(--form-label-color);
 }
 button{
+  
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-/*  .form-holder{
-  float: right;
-  width: 60%;
-  max-width: 60%;
-  background-color: var(--form-label-color);
-} 
-.form-holder h1{
-    color: var(--secondary-color);
+.password:invalid,.confirm-password:invalid{
+  border: var(--invalid-color);
 }
-.form-text{
-  width: 40ch;
-}
-.signup-form{
-  
-  width: 60vw;
-}
-.signup-form div{
-  display: flex;
-}
-label,
-input {
-  display: block;
-}
-.password, .contact, .name{
-  
-  background-color: white;
-}
-.signup-form input{
-  width: 90%;
-}
-
-.signup-form input::after:valid{
-  border-color: var(--valid-color);
-}
-.signup-form input::after:invalid{
-  border-color: var(--invalid-color);
-}
-
-
- */
