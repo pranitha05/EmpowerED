@@ -38,7 +38,7 @@
             <button data-category="all">All</button>
             <button data-category="math">Math</button>
             <button data-category="science">Science</button>
-            <button data-category="english">English</button>
+            <button data-category="english">English</button> 
             <button data-category="history">History</button>
             <button data-category="more">More</button>
 
@@ -49,12 +49,12 @@
             <div class="game-card" data-category="problem-solving">
                 <img src="./logo/chess-game.png" alt="Chess Game">
                 <div class="game-title">Chess</div>
-                <button class="play-button">Play</button>
+                <button class="play-button" data-game-title="chess">Play</button>
             </div>
             <div class="game-card" data-category="problem-solving">
                 <img src="./logo/simmon-game.png" alt="Simmon Game">
                 <div class="game-title">Simmon</div>
-                <button class="play-button">Play</button>
+                <button class="play-button" id="play-simmon-game">Play</button>
             </div>
             <div class="game-card" data-category="math">
                 <img src="./logo/speed-math.png" alt="Math Game">
@@ -73,17 +73,20 @@
                 <button class="play-button">Play</button>
             </div>
 
-            <div class="game-card" data-category="history">
-                <img src="./logo/english-game.PNG" alt="English Game">
-                <div class="game-title">Remember the letters</div>
-                <button class="play-button">Play</button>
+        
+            <div class="game-card" data-category="fun">
+                <img src="./logo/s.PNG" alt="Ninja Game">
+                <div class="game-title">Ninja</div>
+                <button class="play-button" data-game-title="ninja">Play</button>
             </div>
+            <div class="game-card" data-category="puzzle">
+                <img src="./logo/ws.PNG" alt="Word Search">
+                <div class="game-title">Classic Word Search</div>
+                <button class="play-button" data-game-title="classic word search">Play</button>
+            </div>
+                        
+       
             
-            <div class="game-card" data-category="history">
-                <img src="./logo/english-game.PNG" alt="English Game">
-                <div class="game-title">Remember the letters</div>
-                <button class="play-button">Play</button>
-            </div>
             
             <div class="game-card" data-category="history">
                 <img src="./logo/english-game.PNG" alt="English Game">
@@ -130,5 +133,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+  
 </body>
 </html>
