@@ -43,6 +43,7 @@ function addPostToPage(posts) {
     }
 }
 
+
 function errorHandler(message) {
     deleteChildElements(errorContainer)
     const cardDiv = document.createElement("div");
