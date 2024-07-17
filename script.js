@@ -44,12 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('search-input').value = '';
     });
 
+
+    /**
+     * Event listener setup for Play buttons.
+     * Redirects the user to a specific game page based on the game title when a Play button is clicked.
+     * Retrieves the game title from the data-game-title attribute of the clicked button,
+     * encodes it for URL compatibility, and navigates the user to play-game.html with the gameTitle query parameter.
+     * This action occurs in the same browser tab, not opening a new tab.
+     */
     playButtons.forEach(button => {
         button.addEventListener('click', () => {
             const gameTitle = button.getAttribute('data-game-title');
             window.location.href = `play-game.html?gameTitle=${encodeURIComponent(gameTitle)}`;
         });
     });
+
 
     function filterGames(query) {
         const gameCards = gamesGrid.getElementsByClassName('game-card');

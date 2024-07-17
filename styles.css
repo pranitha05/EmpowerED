@@ -7,9 +7,7 @@
 /* Reset default styles */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    color: var(--text-color);
 }
 
 /* Global styles */
@@ -101,8 +99,8 @@ header img, .footer img {
 }
 
 .text-content h1 {
-    font-size: 55px;
-    margin-bottom: 55px;
+    font-size: 45px;
+    margin-bottom: 45px;
 }
 
 .search-bar {
@@ -122,16 +120,9 @@ header img, .footer img {
 
 .search-bar button {
     padding: 10px;
-    border: none;
-    background-color: #ffffff;
     border-radius: 0 20px 20px 0;
-    cursor: pointer;
 }
 
-.search-bar button img {
-    width: 20px;
-    height: 20px;
-}
 
 #clear-button {
     font-size: 24px; 
