@@ -1,6 +1,4 @@
-/* styles.css */
-
-/* Variable definitions */
+/* Reset default styles */
 :root {
     --background-color: #1D1042;
     --text-color: #FFFFFF;
@@ -36,13 +34,13 @@ header {
     position: fixed; /* Ensure the header stays fixed at the top */
     top: 0; /* Align the header to the top of the viewport */
     width: 100%; /* Make the header span the full width of the viewport */
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000; /* Ensuring the header is above other content */
     flex-wrap: wrap; /* Allow items to wrap within the header */
 }
 
-header img {
+header img, .footer img {
     margin-right: 10px; /* Adjusted margin for smaller screens */
-    max-width: 100px; /* Limit maximum width of the logo */
+    max-width: 150px; /* Adjusted logo size */
 }
 
 /* Navigation */
@@ -130,6 +128,21 @@ header img {
     cursor: pointer;
 }
 
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+#clear-button {
+    font-size: 24px; 
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    
+}
 
 /* Categories and games grid */
 .categories {
@@ -204,6 +217,7 @@ footer {
     align-items: center;
     margin-top: auto;
 }
+
 
 .footer-container {
     display: flex;
