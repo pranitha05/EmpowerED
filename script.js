@@ -20,18 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
-
     const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
+    const clearInput = document.getElementById('clear-button');
     const gamesGrid = document.getElementById('games-grid');
     const categoryButtons = document.querySelectorAll('.categories button');
     const playButtons = document.querySelectorAll('.play-button');
-
-    searchButton.addEventListener('click', () => {
-        const query = searchInput.value.toLowerCase();
-        filterGames(query);
-    });
 
     searchInput.addEventListener('keyup', (event) => {
         if (event.key === 'Enter') {
@@ -45,6 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = button.getAttribute('data-category');
             filterGamesByCategory(category);
         });
+    });
+
+    clearInput.addEventListener('click', function() {
+        document.getElementById('search-input').value = '';
     });
 
     playButtons.forEach(button => {
