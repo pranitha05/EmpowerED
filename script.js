@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Right Lottie animation
+    const lottieContainer = document.getElementById('right-lottie-container');
+    const animation = lottie.loadAnimation({
+        container: lottieContainer, 
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './animation/animation.json' 
+        
+    });
+
+    // Initialize Left Lottie animation
+    const leftLottieAnimation = bodymovin.loadAnimation({
+        container: document.getElementById('left-lottie-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './animation/animation.json' 
+    });
+
+
+    
+
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     const gamesGrid = document.getElementById('games-grid');

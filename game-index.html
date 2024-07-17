@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmpowerED Games</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- adding library for animations -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+
+  
+
 </head>
 <body>
     <header>
@@ -22,16 +30,23 @@
     
     <main>
         <div class="games-section">
-            <h1>Educational Games</h1>
-
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Search">
-                <button type="submit" id="search-button">
-
-                    <img src="./logo/search-icon.svg" alt="Search">
-                    
-                </button>
+            <div class="header-content">
+               
+                <div id="left-lottie-container"></div>
+             
+                <div class="text-content">
+                    <h1>Educational Games</h1>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search">
+                        <button type="submit" id="search-button">
+                            <img src="./logo/search-icon.svg" alt="Search">
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="right-lottie-container"></div>
             </div>
+            
         </div>
         <div class="categories">
 
@@ -75,12 +90,12 @@
 
         
             <div class="game-card" data-category="fun">
-                <img src="./logo/s.PNG" alt="Ninja Game">
+                <img src="" alt="Ninja Game">
                 <div class="game-title">Ninja</div>
                 <button class="play-button" data-game-title="ninja">Play</button>
             </div>
             <div class="game-card" data-category="puzzle">
-                <img src="./logo/ws.PNG" alt="Word Search">
+                <img src="" alt="Word Search">
                 <div class="game-title">Classic Word Search</div>
                 <button class="play-button" data-game-title="classic word search">Play</button>
             </div>
