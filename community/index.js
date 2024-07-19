@@ -1,8 +1,8 @@
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-btn");
-const searchContainer = document.getElementById("search-container")
-const errorContainer = document.getElementById("error-message-container")
-
+const searchContainer = document.getElementById("search-container");
+const errorContainer = document.getElementById("error-message-container");
+const formContainer = document.getElementById('search-form');
 
 const postContainer = document.getElementById("card-container");
 const datasets = [{
@@ -53,10 +53,9 @@ function errorHandler(message) {
 
 }
 
-function searchButtonEvent(evt) {
+function searchEvent(evt) {
     evt.preventDefault();
     deleteChildElements(postContainer);
-    const searchInput = document.getElementById('search-input')
     if(!searchInput.value) {
         showAllPosts()
         return;
@@ -77,5 +76,5 @@ function showAllPosts() {
     addPostToPage(datasets)
 }
 
-searchInput.addEventListener("input", searchButtonEvent)
+formContainer.addEventListener("submit", searchEvent)
 showAllPosts()
