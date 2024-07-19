@@ -1,0 +1,24 @@
+{
+  "name": "empowered-backend",
+  "description": "Backend for empowered",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "birongliu pranitha05 khaulanauman MakayelaD mple737",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranitha05/EmpowerED.git#backend"
+  },
+  "bugs": {
+    "url": "https://github.com/pranitha05/EmpowerED/issues"
+  },
+  "homepage": "https://github.com/pranitha05/EmpowerED/tree/backend#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
