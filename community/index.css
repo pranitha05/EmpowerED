@@ -145,6 +145,10 @@ header {
     color: var(--background-color);
 }
 
+.menu-bar {
+    display: none;
+}
+
 .error-message-container, .message {
     justify-content: center;
     display: flex;
@@ -154,6 +158,10 @@ header {
 @media screen and (max-width: 780px) {
     .nav-container {
         display: none;
+       background-color: red;
+    }  
+    .menu-bar {
+        display: block;
     }
 }
 
