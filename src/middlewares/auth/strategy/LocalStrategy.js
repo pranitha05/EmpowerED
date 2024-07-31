@@ -23,7 +23,6 @@ const verify = async (email, password, done) => {
     const isEmailRegistered = existingUsers.find(user => bcrypt.compareSync(email, user.email));
 
     if(!isEmailRegistered) return done(BadRequest(), null);
-    console.log(isEmailRegistered)
     const correctPassword = bcrypt.compareSync(password, isEmailRegistered.password);
     if(correctPassword) return done(null, { id: isEmailRegistered.userId });
 

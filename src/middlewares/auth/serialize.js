@@ -3,7 +3,6 @@ export function serializeSession(passport) {
     process.nextTick(function () {
       return cb(null, {
         id: user.id,
-        username: user.username,
       });
     });
   });

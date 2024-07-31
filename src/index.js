@@ -10,6 +10,7 @@ import passport from "passport";
 import "./middlewares/auth/strategy/LocalStrategy.js";
 import "./middlewares/auth/strategy/JwtStrategy.js";
 import { serializeSession } from "./middlewares/auth/serialize.js";
+
 envValidator.parse(process.env);
 const app = express();
 app.use(express.json({ strict: true }));
@@ -50,4 +51,4 @@ app.use((error, req, res, next) => {
 
 app.use((req, res, next) => res.json(NotFoundException(req.path)));
 
-app.listen(process.env.PORT, () => console.log("Connected"));
+app.listen(process.env.PORT, () => console.log(`Listening on port ${process.env.PORT}`));

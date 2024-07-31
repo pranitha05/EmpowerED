@@ -36,7 +36,6 @@ export function verifyToken(token) {
  * @returns {string}
  */
 export function signJsonWebToken(data) {
-  console.log(data)
   return jwt.sign(
     {
       payload: data.payload,
