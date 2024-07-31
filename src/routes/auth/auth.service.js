@@ -49,6 +49,7 @@ export class AuthService {
       "SELECT role, id FROM `User` WHERE id = ?",
       [userId]
     );
+    if(!user) return null;
     const token = signJsonWebToken({ payload: user });
     return token;
   }
