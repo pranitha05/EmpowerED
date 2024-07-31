@@ -18,7 +18,6 @@ export const jwtBaseOptions = {
 export function verifyToken(token) {
   try {
     const content = jwt.verify(token, secret, jwtBaseOptions);
-    console.log(content)
     return {
       payload: {
         id: content.payload.id,

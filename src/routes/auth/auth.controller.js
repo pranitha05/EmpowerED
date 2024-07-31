@@ -8,6 +8,7 @@ const router = Router();
 router.post("/login", passport.authenticate("local"), async (req, res) => {
   const token = await AuthService.signToken(req.user.id)
   if(!token) return res.json(BadRequest())
+  req.logIn(req.user, (err) => err && console.log(err))
   return res.json(SuccessException({ token }));
 });
 
@@ -21,5 +22,10 @@ router.post("/register", async (req, res) => {
 
   res.send(isRegistered ? BadRequest({ email: ["Email already exists"] }) : SuccessException());
 });
+
+router.post("/logout", (req, res) => {
+  req.logOut({ keepSessionInfo: false }, (err) => console.log(err && console.log(err)))
+  return res.send(SuccessException())
+})
 
 export default router;
