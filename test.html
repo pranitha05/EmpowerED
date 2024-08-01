@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- adding library for animations -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+    
+</head>
+<body id="main-page">
+    <header>
+        <img height="50px" width="150px" src="./logo/logo.svg" alt="logo" />
+        <div class="nav-container">
+            <ul>
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="games-section">
+    
+
+                <div class="header-content">
+                   
+                    <div id="left-lottie-container"></div>
+                 
+                    <div class="text-content">
+                        <h1>Educational <br> Games</h1>
+                        <div class="search-bar">
+                            <input type="text" id="search-input" placeholder="Search">
+                             <button type="button" id="clear-button">&times;</button>
+                        </div>
+                    </div>
+                    
+                   
+    
+                    <div id="right-lottie-container"></div>
+                </div>
+                
+            </div>
+            <div class="categories">
+    
+                <button data-category="all">All</button>
+                <button data-category="math">Math</button>
+                <button data-category="science">Science</button>
+                <button data-category="english">English</button> 
+                <button data-category="history">History</button>
+                <button data-category="more">More</button>
+    
+    
+            </div>
+            <div class="games-grid" id="games-grid">
+
+                
+                <div class="game-card" data-category="category1">
+                    <h3 class="game-title">Chess</h3>
+                    <button class="play-button" data-game-title="Chess">Play</button>
+                </div>
+
+
+
+
+                <div class="game-card" data-category="category2">
+                    <h3 class="game-title">Jungle Sniper</h3>
+                    <button class="play-button" data-game-title="JungleSniper">Play</button>
+                </div>
+                <!-- Add more game cards as needed -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" height="50px" width="150px" src="./logo/logo.svg" alt="logo" />
+            <div class="social-container">
+                <ul>
+                    <li><img src="./logo/twitter.svg" width="25px" height="25px" alt="twitter_logo"></li>
+                    <li><img src="./logo/facebook.svg" width="25px" height="25px" alt="facebook_logo"></li>
+                    <li><img src="./logo/instagram.svg" width="25px" height="25px" alt="instagram_logo"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

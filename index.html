@@ -11,10 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
 
-  
-
 </head>
-<body>
+
+<body id="main-page">
     <header>
          <img class="header-logo" src="./logo/logo.svg" alt="logo" />
             
@@ -62,52 +61,79 @@
 
         </div>
 
-        <div class="games-grid" id="games-grid">
-            <div class="game-card" data-category="problem-solving">
-               
-                <img src="./logo/chess-game.png" alt="Chess Game">
-                <div class="game-title">Chess</div>
-                <button class="play-button" data-game-title="chess">Play</button>
-            
-            
-            </div>
-            <div class="game-card" data-category="problem-solving">
-               
-                <img src="./logo/simmon-game.png" alt="Simmon Game">
-                <div class="game-title">Simmon</div>
-                <button class="play-button" id="play-simmon-game">Play</button>
-            
-            
-            </div>
-            <div class="game-card" data-category="math">
-               
-                <img src="./logo/speed-math.png" alt="Math Game">
-                <div class="game-title">Speed Math</div>
-                <button class="play-button">Play</button>
-            
-            
-            </div>
-            <div class="game-card" data-category="cs">
-               
-                <img src="./logo/array-game.png" alt="CS Game">
-                <div class="game-title">Array</div>
-                <button class="play-button">Play</button>
-            
-            
-            </div>
+        <div class="games-container">
+            <div class="games-grid" id="games-grid">
 
-            <div class="game-card" data-category="english">
-               
-                <img src="./logo/english-game.PNG" alt="English Game">
-                <div class="game-title">Remember the letters</div>
-                <button class="play-button">Play</button>
-            
-            
-            </div>
 
-            
-            
+                <div class="game-card" data-category="problem-solving">
+                    <img src="./logo/chess-game.png" alt="Chess Game">
+                    <div class="game-title">Chess</div>
+                    <div class="rating">★★★★★</div>
+                    <button class="play-button" data-game-title="Chess">Play</button>
+
+
+                </div> 
+        
+                <div class="game-card" data-category="problem-solving">
+
+                    <img src="./logo/simmon-game.png" alt="Simmon Game">
+                    <div class="game-title">Simmon</div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="play-button" data-game-title="Simmon">Play</button>
+
+                </div>
+        
+                <div class="game-card" data-category="math">
+
+                    <img src="./logo/speed-math.png" alt="Math Game">
+                    <div class="game-title">Speed Math</div>
+                    <div class="rating">★★★☆☆</div>
+                    <button class="play-button" data-game-title="Speed-Math">Play</button>
+
+                </div>
+        
+                <div class="game-card" data-category="cs">
+
+                    <img src="./logo/array-game.png" alt="CS Game">
+                    <div class="game-title">Array</div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="play-button" data-game-title="Array">Play</button>
+
+
+                </div>
+        
+                <div class="game-card" data-category="english">
+
+                    <img src="./logo/english-game.PNG" alt="English Game">
+                    <div class="game-title">Remember the letters</div>
+                    <div class="rating">★★★☆☆</div>
+                    <button class="play-button" data-game-title="Remember">Play</button>
+
+
+                </div>
+        
+                <div class="game-card" data-category="english">
+
+                    <img src="./logo/letter-mix.png" alt="English Game">
+                    <div class="game-title">Letter Train</div>
+                    <div class="rating">★★★★★</div>
+                    <button class="play-button" data-game-title="Letter">Play</button>
+
+
+                </div>
+        
+                <div class="game-card" data-category="math">
+
+                    <img src="./logo/number-search.png" alt="Math Game">
+                    <div class="game-title">Number Search</div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="play-button" data-game-title="Number-Search">Play</button>
+
+                    
+                </div>
+            </div>
         </div>
+        
     </main>
 
     <footer>

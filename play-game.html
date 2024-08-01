@@ -6,7 +6,7 @@
     <title>Display Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="play-game-page">
     <header>
         <img height="50px" width="150px" src="./logo/logo.svg" alt="logo" />
         <div class="nav-container">
@@ -20,8 +20,9 @@
     </header>
 
     <main>
-        <div id="game-container">
-            <!--The game will be embedded here based on the selected game -->
+        <div class="game-container">
+            <iframe id="game-frame" src="" title="Game"></iframe>
+            
         </div>
     </main>
 
@@ -38,8 +39,6 @@
         </div>
     </footer>
 
-    <script>
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
