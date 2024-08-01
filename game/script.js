@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'Number-Search':
                     iframe.src = 'https://cdn.htmlgames.com/NumberSearch/';
                     break;
+                case 'Classic-packman':
+                    iframe.src = 'https://cdn.htmlgames.com/ClassicPac/';
+                    break;
 
                 default:
                     // Default or error handling

@@ -175,10 +175,6 @@ header img, footer img {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s;
 }
 
@@ -188,9 +184,7 @@ header img, footer img {
 
 .game-card img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    flex-grow: 1;
 }
 
 .game-title {
@@ -215,13 +209,11 @@ header img, footer img {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    flex-shrink: 0;
 }
 
 .play-button:hover {
     background-color: #4c3a86;
 }
-
 /* Footer */
 footer {
     background-color: var(--background-color);
