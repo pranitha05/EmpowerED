@@ -26,7 +26,6 @@ export function verifyToken(token) {
       success: true,
     };
   } catch (error) {
-    console.error(error)
     return { payload: null, success: false };
   }
 }

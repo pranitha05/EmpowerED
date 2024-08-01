@@ -1,6 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
-import { BadRequest, SuccessException, UnauthorizedException } from "../../utilities/exception.js";
+import { BadRequest, SuccessException } from "../../utilities/exception.js";
 import { AuthService } from "./auth.service.js";
 import { registerValidator } from "../../utilities/validation.js"
 const router = Router();
