@@ -12,16 +12,19 @@ export class AuthService {
       passwordEncrypted,
       firstNameEncrypted,
       lastNameEncrypted,
-    ] = await Promise.all([
-      bcrypt.hash(email, this.#SALT),
-      bcrypt.hash(password, this.#SALT),
-      bcrypt.hash(firstName, this.#SALT),
-      bcrypt.hash(lastName, this.#SALT),
-    ]);
-
-    const [existingUsers] = await connection.query("SELECT email FROM `Credential`");
-    const isEmailRegistered = existingUsers.some(user => bcrypt.compareSync(email, user.email));
-    if(isEmailRegistered) return true;
+    ] = [
+      bcrypt.hashSync(email, this.#SALT),
+      bcrypt.hashSync(password, this.#SALT),
+      bcrypt.hashSync(firstName, this.#SALT),
+      bcrypt.hashSync(lastName, this.#SALT),
+    ];
+    const [existingUsers] = await connection.query(
+      "SELECT email FROM `Credential`"
+    );
+    const isEmailRegistered = existingUsers.some((user) =>
+      bcrypt.compareSync(email, user.email)
+    );
+    if (isEmailRegistered) return true;
     const userId = generateId().toString();
     const credId = generateId().toString();
     const credQuery = `INSERT INTO Credential (id, email, password, userId) VALUES (?, ?, ?, ?)`;
@@ -49,7 +52,7 @@ export class AuthService {
       "SELECT role, id FROM `User` WHERE id = ?",
       [userId]
     );
-    if(!user) return null;
+    if (!user) return null;
     const token = signJsonWebToken({ payload: user });
     return token;
   }
