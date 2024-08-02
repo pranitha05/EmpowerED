@@ -162,7 +162,7 @@ header img, footer img {
 
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 35px;
     margin-left: 50px;
     margin-right: 50px;
@@ -176,6 +176,9 @@ header img, footer img {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    /*help maintain the game card size */
+    height: 300px; 
+  
 }
 
 .game-card:hover {
@@ -184,6 +187,7 @@ header img, footer img {
 
 .game-card img {
     width: 100%;
+    height: 53%;
     border-radius: 10px;
 }
 
