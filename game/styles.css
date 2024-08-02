@@ -29,11 +29,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: fixed; /* Ensure the header stays fixed at the top */
-    top: 0; /* Align the header to the top of the viewport */
-    width: 100%; /* Make the header span the full width of the viewport */
-    z-index: 1000; /* Ensuring the header is above other content */
-    flex-wrap: wrap; /* Allow items to wrap within the header */
+
+    /* position: fixed; /* Ensure the header stays fixed at the top */
+    /* top: 0; Align the header to the top of the viewport */
+    /* width: 100%; Make the header span the full width of the viewport */
+    /* z-index: 1000; Ensuring the header is above other content */
+    /* flex-wrap: wrap; Allow items to wrap within the header */ 
 }
 
 header img, footer img {
@@ -276,7 +277,13 @@ iframe#game-frame {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.game-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
