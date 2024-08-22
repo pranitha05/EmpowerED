@@ -30,7 +30,7 @@
 <!--  where the form and heading will be -->
 <div class="form-holder">
   <h1>Welcome to Empower ED</h1>
-  <form id="signup-form" onsubmit="handlesubmit(event)">
+  <form id="login-form" action="http://localhost:3000/login" method="POST">
       <div class="input-holder">
         <div class="login">
           <div class="email">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="login-button">
-          <button type="submit">Login</button>
+          <button id="login-button" type="submit">Login</button>
       </div>
       <div class="log-in-opt">
           <p>Don't have an account? <a href="signup.html">sign up</a></p>

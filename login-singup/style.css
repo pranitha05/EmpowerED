@@ -26,7 +26,7 @@ body {
 header {
   padding: 18px 38px;
   background-color: var(--background-color);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .header-container {
@@ -46,7 +46,7 @@ ul {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(199, 193, 181)
+  color: rgb(199, 193, 181);
 }
 /*
     5. Improve media defaults
@@ -89,14 +89,14 @@ h6 {
 }
 :root {
   --invalid-color: red;
-  --background-color: #1D1042;
+  --background-color: #1d1042;
   --valid-color: green;
-  --text-color: #FFFFFF;
+  --text-color: #ffffff;
   --primary-color: white;
   --secondary-color: rgb(165, 68, 165);
   --form-label-color: rgb(162, 158, 158);
 }
-.container{
+.container {
   display: flex;
 }
 .logo-holder,
@@ -118,34 +118,40 @@ h6 {
 .form-holder {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
   height: 100vh;
   min-width: 60%;
-  background-color: var(--form-label-color);
+  background-color: white;
 }
 .input-holder {
   background: white;
 }
-.form-holder h1,.log-in-opt{
-  margin: 20px;
-}
-.log-in-opt{
+.log-in-opt {
   font-size: 1.3rem;
 }
-.log-in-opt a{
+.log-in-opt a {
   color: var(--secondary-color);
 }
-.name,.contact,.security,.login{
+.name,
+.contact,
+.security,
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   flex-wrap: wrap;
 }
-.name div, .contact div, .security div, .login div{
+.name div,
+.contact div,
+.security div,
+.login div {
   padding: 20px;
 }
 label {
+  text-align: left;
   display: block;
 }
 input {
@@ -160,8 +166,8 @@ label {
   color: var(--form-label-color);
 }
 button {
+  margin-bottom: 10px;
   cursor: pointer;
-  margin: 20px;
   padding: 10px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -181,16 +187,20 @@ button {
 
 @media screen and (max-width: 780px) {
   .nav-container {
-      display: none;
+    display: none;
   }
 }
 @media screen and (max-width: 780px) {
-  .name,.contact,.security,.login{
+  .name,
+  .contact,
+  .security,
+  .login {
     padding: 0;
   }
-  .form-holder h1,.log-in-opt,button{
+  .form-holder h1,
+  .log-in-opt,
+  button {
     margin: 0px;
     padding: 0px;
   }
-
 }
