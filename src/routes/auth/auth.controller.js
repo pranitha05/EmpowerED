@@ -4,8 +4,11 @@ import { BadRequest, SuccessException } from "../../utilities/exception.js";
 import { AuthService } from "./auth.service.js";
 import { registerValidator } from "../../utilities/validation.js"
 const router = Router();
-
-router.post("/login", passport.authenticate("local"), async (req, res) => {
+const validateAuth = (req, res, next) => {
+  if (!req.body.email || !req.body.password) return res.status(400).send(BadRequest());
+  next()
+}
+router.post("/login", validateAuth, passport.authenticate("local"), async (req, res) => {
   const token = await AuthService.signToken(req.user.id)
   if(!token) return res.json(BadRequest())
   req.logIn(req.user, (err) => err && console.log(err))
@@ -20,7 +23,8 @@ router.post("/register", async (req, res) => {
 
   const isRegistered = await AuthService.registerUser({ email, password, firstName, lastName })
 
-  res.send(isRegistered ? BadRequest({ email: ["Email already exists"] }) : SuccessException());
+  // res.send(isRegistered ? BadRequest({ email: ["Email already exists"] }) : SuccessException());
+  res.send("3")
 });
 
 router.post("/logout", (req, res) => {

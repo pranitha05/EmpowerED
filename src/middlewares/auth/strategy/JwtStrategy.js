@@ -1,7 +1,7 @@
 import passport from "passport";
 import { ExtractJwt, Strategy } from "passport-jwt";
 import { jwtBaseOptions } from "../../../utilities/jwt.js";
-import { db } from "../../../database/index.js";
+import { db } from "../../../microservice/database/index.js";
 import { UnauthorizedException } from "../../../utilities/exception.js";
 
 const verify = async (payload, done) => {

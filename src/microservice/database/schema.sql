@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS User (
     firstName VARCHAR(255) NOT NULL,
     lastName VARCHAR(255) NOT NULL,
     credentialId VARCHAR(255) UNIQUE,
+    isVerified BOOLEAN DEFAULT(False),
     UNIQUE INDEX `User_id_key`(`id`),
     UNIQUE INDEX `User_credentialId_key`(`credentialId`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

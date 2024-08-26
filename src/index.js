@@ -10,6 +10,7 @@ import passport from "passport";
 import "./middlewares/auth/strategy/LocalStrategy.js";
 import "./middlewares/auth/strategy/JwtStrategy.js";
 import { serializeSession } from "./middlewares/auth/serialize.js";
+import { cacheCredentials } from "./microservice/redis/index.js";
 
 envValidator.parse(process.env);
 const app = express();
@@ -23,7 +24,6 @@ app.use(
     saveUninitialized: false,
   })
 );
-
 app.use(
   cors({
     credentials: true,
@@ -42,6 +42,8 @@ app.use(
   passport.authenticate("jwt"),
   community
 );
+cacheCredentials()
+
 app.use("/v1/game", validateJWTMiddleware, passport.authenticate("jwt"), game);
 
 app.use((error, req, res, next) => {

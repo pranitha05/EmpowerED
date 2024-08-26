@@ -14,5 +14,5 @@ export function BadRequest(data) {
 }
 
 export function NotFoundException(path) {
-    return { status: 404, data: `(${path}) Resources not found` }
+    return { status: 404, data: path ? path : `(${path}) Resources not found` }
 }

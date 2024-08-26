@@ -1,4 +1,4 @@
-import { UnauthorizedException } from "../../../utilities/exception.js";
+import { BadRequest, UnauthorizedException } from "../../../utilities/exception.js";
 import { DEFAULT_CONSTANTS } from "../../../utilities/constants.js";
 import { verifyToken } from "../../../utilities/jwt.js";
 import * as express from "express";
@@ -11,7 +11,7 @@ import * as express from "express";
  * @returns {void}
  */
 export function validateJWTMiddleware(req, res, next) {
-  if (!req.headers.authorization) return res.send(UnauthorizedException());
+  if (!req.headers.authorization) return res.send(BadRequest());
   const [type, code] = req.headers.authorization.trim().split(" ");
   if (!code || type !== DEFAULT_CONSTANTS.AUTH_TYPE)
     return res.send(UnauthorizedException());

@@ -4,7 +4,7 @@ import {
   BadRequest,
   UnauthorizedException,
 } from "../../../utilities/exception.js";
-import { db } from "../../../database/index.js";
+import { db } from "../../../microservice/database/index.js";
 import bcrypt from "bcrypt";
 const options = {
   passwordFields: "password",
@@ -36,13 +36,13 @@ const verify = async (email, password, done) => {
     password,
     isEmailRegistered.password
   );
-  if (correctPassword)
-    return done(null, {
-      id: isEmailRegistered.userId,
-      role: isEmailRegistered.role,
-    });
 
-  return done(UnauthorizedException());
+  if (!correctPassword) return done(BadRequest());
+
+  return done(null, {
+    id: isEmailRegistered.userId,
+    role: isEmailRegistered.role,
+  });
 };
 const local = new Strategy(options, verify);
 
