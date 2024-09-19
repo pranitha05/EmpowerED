@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1D1042;
+            color: white;
+            padding: 20px 50px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #EED6BE;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo::before {
+            content: "£";
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header .auth-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1D1042;
+            color: white;
+            padding: 50px;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .hero-text button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #1D1042;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .courses {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+        }
+
+        .courses h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .trending-courses {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .trending-courses .course {
+            background-color: #b098f2;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1D1042;
+            color: white;
+            padding: 20px 50px;
+        }
+
+        footer .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #EED6BE;
+            display: flex;
+            align-items: center;
+        }
+
+        footer .footer-logo::before {
+            content: "£";
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        footer .social-media a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">mpowerED</div>
+        <nav>
+            <ul>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="#">Register/Login</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to EmpowerED!</h1>
+                <p>EmpowerED: Revolutionizing Education with Curated Resources, Personalized Learning, Multilingual Support, Gamified Experiences, Community Forums, and Offline Access. Join the Future of Learning Today!</p>
+                <button>Contact us</button>
+                <div class="hero-image">
+                    <img src="/templates/hero.png" alt="Hero Image">
+                </div>
+        </section>
+        
+        <section class="courses">
+            <h2>Unlock Your Potential with Our Handpicked Courses - Start Your Journey Today!</h2>
+            <div class="trending-courses">
+                <div class="course">Course 1</div>
+                <div class="course">Course 2</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logo">mpowerED</div>
+        <div class="social-media">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
