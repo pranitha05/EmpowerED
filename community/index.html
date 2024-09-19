@@ -8,19 +8,18 @@
     <script defer type="module" src="./index.js"></script>
   </head>
   <body>
-    <header> 
-      <div class="header-container">
-        <img height="50px" width="150px" src="./assets/logo.svg" alt="logo" />
-        <div class="nav-container">
+    <header>
+      <div class="logo"><a href="/">empowerED</a></div>
+      <nav>
           <ul>
-            <li>Schools</li>
-            <li><a href="/">Community</a></li>
-            <li>Games</li>
-            <li><a href="../login-singup/login.html">Login</a></li>
+              <li><a href="/community/index.html">Community</a></li>
+              <li><a href="/game/index.html">Games</a></li>
           </ul>
-        </div>
+      </nav>
+      <div class="auth-links">
+          <a href="/login-singup/login.html">Login</a>
       </div>
-      </header>
+  </header>
     <main>
         <div class="community-landing-container">
             <h1 class="community-title">Community</h1>
@@ -55,8 +54,7 @@
     <footer>
         <div class="footer-container">
         <img height="50px" width="150px" src="./assets/logo.svg" alt="logo" />
-        <div class="social-container">
-          <ul>
+          <ul class="social-container">
             <li>
               <img src="./assets/twitter.svg" width="25px" height="25px" alt="twitter_logo">
             </li>
@@ -68,7 +66,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </div>
     </footer>
   </body>

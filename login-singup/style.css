@@ -24,15 +24,44 @@ body {
 }
 
 header {
-  padding: 18px 38px;
-  background-color: var(--background-color);
-  color: var(--text-color)
-}
-
-.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #1D1042;
+  color: white;
+  padding: 20px 50px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EED6BE;
+  display: flex;
+  align-items: center;
+}
+
+header .logo::before {
+  content: "£";
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .auth-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-container,
@@ -170,27 +199,66 @@ button {
 .confirm-password:invalid {
   border: var(--invalid-color);
 }
-.footer-container {
-  height: 160.5px;
+
+footer {
   display: flex;
-  padding: 18px 38px;
-  align-items: center;
   justify-content: space-between;
-  background-color: var(--background-color);
+  align-items: center;
+  background-color: #1D1042;
+  color: white;
+  padding: 20px 50px;
 }
 
-@media screen and (max-width: 780px) {
-  .nav-container {
-      display: none;
-  }
+footer .footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EED6BE;
+  display: flex;
+  align-items: center;
 }
-@media screen and (max-width: 780px) {
-  .name,.contact,.security,.login{
-    padding: 0;
-  }
-  .form-holder h1,.log-in-opt,button{
-    margin: 0px;
-    padding: 0px;
+
+footer .footer-logo::before {
+  content: "£";
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+footer .social-media a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+      flex-direction: column;
+      padding: 20px;
   }
 
+  .hero-text {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .hero-image img {
+      margin-top: 20px;
+  }
+
+  .courses {
+      padding: 20px;
+  }
+
+  .trending-courses {
+      flex-direction: column;
+  }
+
+  footer {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  footer .social-media {
+      margin-top: 20px;
+  }
+  
 }
