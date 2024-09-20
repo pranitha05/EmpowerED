@@ -1,8 +1,10 @@
 const express = require('express');
+
 const mysql = require('mysql2');
 const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 const path = require('path');
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -20,6 +22,7 @@ db.connect((err) => {
 });
 
 // Signup Route
+
 app.post('/signup', (req, res) => {
     const { first_name, second_name, email, phone_no, password } = req.body;
 
