@@ -10,31 +10,45 @@
 }
 
 header {
-    padding: 18px 38px;
-    background-color: var(--background-color)
-}
-
-.nav-container a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(199, 193, 181)
-  }
-.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1D1042;
+    color: white;
+    padding: 20px 50px;
 }
 
-.nav-container, ul {
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #EED6BE;
     display: flex;
-    gap: 10px;
-    text-decoration: none;
-    list-style: none;
+    align-items: center;
 }
 
+header .logo::before {
+    content: "£";
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 .community-landing-container {
     display: flex;
     height: 350px;
@@ -42,6 +56,11 @@ a:hover {
     justify-content: center;
     text-align: center;
     background-color: var(--background-color);
+}
+
+.social-container, li {
+    display: flex;
+    gap: 20px;
 }
 
 .footer-container {

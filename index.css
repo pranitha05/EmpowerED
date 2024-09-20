@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1042;
+    color: white;
+    padding: 20px 50px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #EED6BE;
+    display: flex;
+    align-items: center;
+}
+
+header .logo::before {
+    content: "£";
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1042;
+    color: white;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #1D1042;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.courses {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.courses h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.trending-courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trending-courses .course {
+    background-color: #b098f2;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D1042;
+    color: white;
+    padding: 20px 50px;
+}
+
+footer .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #EED6BE;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-logo::before {
+    content: "£";
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+
+    .courses {
+        padding: 20px;
+    }
+
+    .trending-courses {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .social-media {
+        margin-top: 20px;
+    }
+    
+}

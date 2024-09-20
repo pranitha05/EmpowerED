@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerED Games</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- adding library for animations -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+
+  
+
+</head>
+<body>
+    <header>
+        <div class="logo">empowerED</div>
+        <nav>
+            <ul>
+                <li><a href="/community/index.html">Community</a></li>
+                <li><a href="/game/index.html">Games</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="/login-singup/login.html">Login</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="games-section">
+
+            <div class="header-content">
+               
+                <div id="left-lottie-container"></div>
+             
+                <div class="text-content">
+                    <h1>Educational <br> Games</h1>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search">
+                         <button type="button" id="clear-button">&times;</button>
+                    </div>
+                </div>
+                
+               
+
+                <div id="right-lottie-container"></div>
+            </div>
+            
+        </div>
+        <div class="categories">
+
+            <button data-category="all">All</button>
+            <button data-category="math">Math</button>
+            <button data-category="science">Science</button>
+            <button data-category="english">English</button> 
+            <button data-category="history">History</button>
+            <button data-category="more">More</button>
+
+
+        </div>
+
+        <div class="games-grid" id="games-grid">
+            <div class="game-card" data-category="problem-solving">
+               
+                <img src="./logo/chess-game.png" alt="Chess Game">
+                <div class="game-title">Chess</div>
+                <button class="play-button" data-game-title="chess">Play</button>
+            
+            
+            </div>
+            <div class="game-card" data-category="problem-solving">
+               
+                <img src="./logo/simmon-game.png" alt="Simmon Game">
+                <div class="game-title">Simmon</div>
+                <button class="play-button" id="play-simmon-game">Play</button>
+            
+            
+            </div>
+            <div class="game-card" data-category="math">
+               
+                <img src="./logo/speed-math.png" alt="Math Game">
+                <div class="game-title">Speed Math</div>
+                <button class="play-button">Play</button>
+            
+            
+            </div>
+            <div class="game-card" data-category="cs">
+               
+                <img src="./logo/array-game.png" alt="CS Game">
+                <div class="game-title">Array</div>
+                <button class="play-button">Play</button>
+            
+            
+            </div>
+
+            <div class="game-card" data-category="english">
+               
+                <img src="./logo/english-game.PNG" alt="English Game">
+                <div class="game-title">Remember the letters</div>
+                <button class="play-button">Play</button>
+            
+            
+            </div>
+
+            
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <img class="footer-logo" src="./logo/logo.svg" alt="logo" />
+            
+                <ul class="social-container">
+                    <li>
+                       
+                        <img src="./logo/twitter.svg" width="25px" height="25px" alt="twitter_logo">
+                    </li>
+                    <li>
+
+                        <img src="./logo/facebook.svg" width="25px" height="25px" alt="facebook_logo">
+                    </li>
+                    <li>
+                    
+                        <img src="./logo/instagram.svg" width="25px" height="25px" alt="instagram_logo">
+                    </li>
+                </ul>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+  
+</body>
+</html>
